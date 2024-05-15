@@ -7,12 +7,147 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_Formulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/TV_Formulario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ApellidosNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/TV_ApellidosNombres"
+        app:layout_constraintStart_toStartOf="@+id/tv_Formulario"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Formulario" />
+
+    <TextView
+        android:id="@+id/tv_Correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/TV_Correo"
+        app:layout_constraintStart_toStartOf="@+id/tv_ApellidosNombres"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ApellidosNombres" />
+
+    <TextView
+        android:id="@+id/tv_clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/TV_Clave"
+        app:layout_constraintStart_toStartOf="@+id/tv_Correo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Correo" />
+
+    <TextView
+        android:id="@+id/tv_Nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/TV_Nacimiento"
+        app:layout_constraintStart_toStartOf="@+id/tv_clave"
+        app:layout_constraintTop_toBottomOf="@+id/tv_clave" />
+
+    <TextView
+        android:id="@+id/tv_carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/TV_Carrera"
+        app:layout_constraintStart_toStartOf="@+id/tv_Nacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Nacimiento" />
+
+    <TextView
+        android:id="@+id/tv_medio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:text="@string/TV_Medio"
+        app:layout_constraintStart_toStartOf="@+id/tv_carrera"
+        app:layout_constraintTop_toBottomOf="@+id/tv_carrera" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/baseline_account_box_24"
+        android:text="@string/Btn_Enviar"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="673dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_carrera"
+        app:layout_constraintTop_toBottomOf="@+id/tv_carrera">
+
+        <RadioButton
+            android:id="@+id/radioButtonIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_is" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_ia" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_IM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_IM" />
+
+        <RadioButton
+            android:id="@+id/radioButtonADMIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_admin" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/CheckboxRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/checkbox_radio"
+        app:layout_constraintStart_toStartOf="@+id/tv_medio"
+        app:layout_constraintTop_toBottomOf="@+id/tv_medio" />
+
+    <CheckBox
+        android:id="@+id/CheckboxInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/checkbox_internet"
+        app:layout_constraintStart_toStartOf="@+id/CheckboxRadio"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxRadio" />
+
+    <CheckBox
+        android:id="@+id/CheckboxPublicidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/checkbox_publicidad"
+        app:layout_constraintStart_toStartOf="@+id/CheckboxAmigo"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxAmigo" />
+
+    <CheckBox
+        android:id="@+id/CheckboxAmigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/checkbox_amigo"
+        app:layout_constraintStart_toStartOf="@+id/CheckboxInternet"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxInternet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

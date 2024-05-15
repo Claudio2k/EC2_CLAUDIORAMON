@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">DAM_CLAUDIORAMON</string>
+    <string name="TV_Formulario">Examen de adminision 2024</string>
+    <string name="TV_ApellidosNombres">Apellidos y Nombres</string>
+    <string name="TV_Correo">Correo electrónico</string>
+    <string name="TV_Clave">Clave</string>
+    <string name="TV_Nacimiento">Fecha de Nacimiento</string>
+    <string name="TV_Carrera">Carrera</string>
+    <string name="TV_Medio">¿Por qué medio se entero de la convocatoria?</string>
+    <string name="Btn_Enviar">Enviar</string>
+    <string name="checkbox_ingenieriadesistemas">Ingenieria de Sistemas</string>
+    <string name="radiobutton_is">Ingenieria de Sistemas</string>
+    <string name="radiobutton_ia">Ingenieria Ambiental</string>
+    <string name="radiobutton_IM">Ingenieria Mecánica</string>
+    <string name="radiobutton_admin">Administración</string>
+    <string name="checkbox_radio">Radio</string>
+    <string name="checkbox_internet">Internet</string>
+    <string name="checkbox_amigo">Amigo</string>
+    <string name="checkbox_publicidad">Publicidad</string>
 </resources>
